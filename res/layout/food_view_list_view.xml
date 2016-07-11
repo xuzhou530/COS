@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/food_image"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/food_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000">
+        </TextView>
+        <TextView
+            android:id="@+id/food_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/food_image"
+        android:layout_toEndOf="@+id/food_image"
+        android:layout_marginStart="20dp"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:layout_gravity="start">
+    </TextView>
+
+    <TextView
+        android:id="@+id/food_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/food_price"
+        android:layout_alignBottom="@+id/food_image"
+        android:layout_marginStart="50dp"
+        android:textColor="#1E90FF"
+        android:textSize="16sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/food_button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_alignBottom="@+id/food_image"
+        android:layout_marginStart="300dp"
+        android:background="#FFFFFF"
+        android:layout_gravity="end"
+        android:focusable="false">
+    </ImageButton>
+</RelativeLayout>
